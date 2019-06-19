@@ -43,7 +43,7 @@ if config('MODE') == "dev":
             'HOST': config('DB_HOST'),
             'PORT': '',
         }
-        
+
     }
    # production
 else:
@@ -65,6 +65,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 INSTALLED_APPS = [
     'rest_framework.authtoken',
     'chmapp.apps.ChmappConfig',
+    'analysis.apps.AnalysisConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -111,7 +112,6 @@ WSGI_APPLICATION = 'chmProject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
 
 
 # Password validation
