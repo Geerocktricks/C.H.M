@@ -1,4 +1,4 @@
-#!/home/geeotricks/Documents/C.H.M/virtual/bin/python
+#!/home/mugambi254/Documents/django/prodev/crophealth/C.H.M/virtual/bin/python3
 from django.core import management
 
 if __name__ == "__main__":
